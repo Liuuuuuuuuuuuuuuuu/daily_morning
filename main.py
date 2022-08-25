@@ -1,7 +1,4 @@
 from datetime import date, datetime
-import math
-from wechatpy import WeChatClient
-from wechatpy.client.api import WeChatMessage, WeChatTemplate
 import requests
 import os
 import random
