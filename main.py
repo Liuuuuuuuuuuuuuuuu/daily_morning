@@ -13,11 +13,11 @@ start_date = os.getenv('START_DATE')
 city = os.getenv('CITY')
 birthday = os.getenv('BIRTHDAY')
 
-app_id = os.getenv('APP_ID')
-app_secret = os.getenv('APP_SECRET')
+app_id =wx060460e6e84eec2c
+app_secret =5ca5fd3a29da54a360e431f63d7486b7
 
-user_ids = os.getenv('USER_ID', '').split("\n")
-template_id = os.getenv('TEMPLATE_ID')
+user_ids =ogcSK6OEFHZ9aLCbatTl_m3i_tWY	
+template_id =0zrA8UadnYykUTi3fpjsfAknZaUaSrjVK-34Wr6jz0Q
 
 if app_id is None or app_secret is None:
   print('请设置 APP_ID 和 APP_SECRET')
@@ -34,7 +34,7 @@ if template_id is None:
 # weather 直接返回对象，在使用的地方用字段进行调用。
 def get_weather():
   if city is None:
-    print('请设置城市')
+    print('湖北')
     return None
   url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
   res = requests.get(url).json()
